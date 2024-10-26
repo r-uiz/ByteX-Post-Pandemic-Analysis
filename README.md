@@ -65,14 +65,14 @@ Loyalty members make their first purchase from account creation 20 days earlier 
 
 ### Sales by Platforms & Channels
 
-Direct channels account for 83% of ByteX’s sales, while social media contributes 1% and affiliate channels 3%. Affiliates have the highest AOV at $303, with email campaigns at the lowest ($181). The website generates 97% of sales with an AOV of $304, while the mobile app lags with an AOV of $47. Further considerations on channel performance are covered in the assumptions and caveats section.
+Direct channels account for 83% of ByteX's sales, while social media contributes 1% and affiliate channels 3%. Affiliates have the highest AOV at $303, with email campaigns at the lowest ($181). The website generates 97% of sales with an AOV of $304, while the mobile app lags with an AOV of $47. Further considerations on channel performance are covered in the assumptions and caveats section.
 
 ![Sales by Platform and Channel](Data/channel_platform.webp)
 
 
 ### Refund Rate Trends
 
-Refund rates for high-ticket items peaked during the early pandemic but have since stabilized at 4-6%. In 2021, refunds decreased across all products compared to the the previous two years. Laptops had the highest refund rates in 2019 and 2020 (17%) but have since fallen to 6-9%, aligning with other product categories.
+Refund rates for high-ticket items peaked during the early pandemic but have since stabilized at 4-6%. In 2021, refunds decreased across all products compared to the the previous two years. Laptops had the highest refund rates in 2019 and 2020 (17%) but have since fallen to 6-9%, aligning with other product categories. Interestingly, loyalty purchases had a higher refund rate than non-loyalty purchases, which could warrant a deeper look into the loyalty program itself. One potential influencing factor might be a longer refund eligibility period for loyalty members. See the assumptions and caveats section for further clarification.
 
 ## Actionable Recommendations
 
@@ -114,20 +114,29 @@ North America and EMEA generate 80% of sales, making them critical markets for s
 
 
 ## Assumptions and Caveats
+> Key questions to relevant teams for further clarity before project progression and decision-making.
 
-- No recorded refunds for the entire year of 2022, which appears unusual and may warrant further investigation.
-- There is a deterministic relationship between marketing channel and account creation method, with each marketing channel tied exclusively to a specific account creation method. This lack of variation may need attention from the data engineering team.
-- I am unsure of how the loyalty program variable relate to the specific order record. Is the loyalty program variable tied to the user's account, or to the specific order itself? Is it possible for a user to be a loyalty member for one order and not for another? This would affect the accuracy of the loyalty program performance metrics.
-- Direct and email marketing drive the majority of sales, but I am unsure of how exactly these relate to the loyalty program further because of the seemingly deterministic relationship of *a channel* to *an account* to *an order*.
-    - Assuming that the marketing channel is truly the way the customer opened the site to make a purchase, the email channel has the highest loyalty member rate at 58%, while the direct channel has the highest loyalty member count at 32,906 (72% of all loyalty members). 
-        - This would give us a hint as to which channels to hone in on to ensure loyalty program success moving forward.
-- With this, these are the columns I would pursue clarity on by asking the relevant teams:
-    - `marketing_channel` and `account_creation_method` in the `customers` table
-        - How is this recorded and what does it represent exactly in the context of the data? 
-        - Why do these columns have a deterministic relationship?
-    - `loyalty_program` in the `customers` table
-        - What is the boundaries of this variable? Is it tied to the user's account or to the specific order itself?
-        - Is it possible for a user to be a loyalty member for one order and not for another? (Is the loyalty program a subscription or a one-time sign-up?)
+- **Refund Records**: No refunds were recorded for 2022, which is an anomaly that may require further examination.
+- **Deterministic Relationship in Data**: There is a one-to-one mapping between `marketing_channel` and `account_creation_method`, with each channel exclusively tied to a single method.  This lack of variation may need attention from the data engineering team.
+- **Loyalty Program Clarification**: The relationship between the `loyalty_program` variable and individual order records is unclear. Specifically:
+  - Is `loyalty_program` linked to the user's account, or is it order-specific?
+  - Can a user be a loyalty member for one purchase and not another? This detail is critical for accurately measuring loyalty program performance.
+- **Sales and Marketing Channels**: Direct and email marketing channels drive most sales, though their direct connection to the loyalty program remains unclear due to the deterministic nature of *channel*, *account*, and *order* relationships.
+    - **Initial Point of Contact Leading to Purchases**: Each purchase should ideally be attributed to the marketing channel that directly led to it, rather than defaulting all future purchases to a customer's initial channel (e.g., Customer A comes through email for one purchase and social media for the next). This approach provides a clearer view of each channel's effectiveness in driving sales over time. That is not the case in this dataset
+    - Given the assumption that it is the user's entry point at time of account creation rather than order placement (which is not the best practice in the context of ecommerce transactions):
+        - The email channel has the highest loyalty membership rate at 58%.
+        - The direct channel has the largest loyalty member count, comprising 32,906 members (72% of all loyalty members).
+        - These metrics could inform which channels to emphasize for enhancing loyalty program engagement.
+
+### Key Columns for Further Clarification with Relevant Teams:
+
+- `marketing_channel` and `account_creation_method` in the `customers` table
+    - How is this recorded and what does it represent exactly in the context of the data? 
+    - What factors drive the deterministic relationship between them?
+    - Is the marketing channel the initial touchpoint before account creation OR the point of origin that led to an individual purchase was made (which is a far more useful metric)?
+- `loyalty_program` in the `customers` table
+    - Is this variable account-specific or tied to individual orders?
+    - Can membership status vary between orders for the same user? (Is the loyalty program a subscription or a one-time sign-up?)
 
 ***
 
