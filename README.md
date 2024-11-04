@@ -15,12 +15,6 @@
     - [Sales by Platforms & Channels](#sales-by-platforms--channels)
     - [Refund Rate Trends](#refund-rate-trends)
 - [Actionable Recommendations](#actionable-recommendations)
-    - [Maximizing Product Offerings](#maximizing-product-offerings)
-    - [Customer Growth and Retention Strategies](#customer-growth-and-retention-strategies)
-    - [Loyalty Program Enhancements](#loyalty-program-enhancements)
-    - [Maintaining Low Refund Rates](#maintaining-low-refund-rates)
-    - [Optimizing Channels and Platforms](#optimizing-channels-and-platforms)
-    - [Regional Growth Strategies](#regional-growth-strategies)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 
 </details>
@@ -31,9 +25,7 @@ ByteX, a global e-commerce company founded in 2018, specializes in selling popul
 
 ## Executive Summary
 
-This analysis of 108,000 ByteX orders from 2019 to 2022 reveals key trends to inform strategic actions post-pandemic. ByteX averaged $7 million in annual sales, with a sharp 2020 pandemic surge, followed by a 45% decline by 2022, stabilizing above pre-pandemic levels. North America and EMEA remain the strongest markets, contributing 80% of sales, while APAC and LATAM showed volatility despite rapid growth in 2020. Laptop sales, particularly MacBooks and ThinkPads, surged during the pandemic but have since slowed. The loyalty program has boosted customer engagement and revenue but has lost momentum post-pandemic.
-
-To maintain growth, ByteX should focus on expanding its top-performing products, optimizing the loyalty program, and prioritizing North America and EMEA. Additional opportunities include stabilizing APAC and LATAM markets, improving refund rates, and expanding affiliate marketing.
+ByteX's sales analysis of 108k records across 2019-2022 shows annual revenue stabilizing at around $7 million, nearing pre-COVID levels, with North America and EMEA contributing 80% of sales. Monitors and AirPods account for 60% of revenue, though customer retention is a concern as unique and repeat purchase rates have declined by 15% and 10%, respectively. ByteX can benefit from expanding top product lines, optimizing bundling, and enhancing loyalty programs to increase customer lifetime value. Targeted growth in APAC and LATAM, along with improvements to digital channels like the mobile app, will strengthen ByteX's market position and drive sustainable growth.
 
 <details>
 <summary>ByteX Dataset ERD</summary>
@@ -68,10 +60,10 @@ To maintain growth, ByteX should focus on expanding its top-performing products,
 
 ### Customer Growth and Repeat Purchase Trends
 
-- ByteX’s unique customers grew steadily from 2019 to 2021, peaking at nearly 30,000 in 2021, but declined sharply by nearly 40% in 2022.
-- Repeat purchase rates (≥2 orders) consistently decreased, from 20.22% in 2019 to 14.76% in 2022, indicating challenges in retaining customers after initial purchases. Insights into the behaviors of ByteX’s core repeat customer group (avg. 4k unique customers) could reveal patterns to help drive repeat purchases more broadly.
+- ByteX's unique customers grew steadily from 2019 to 2021, peaking at nearly 30,000 in 2021, but declined sharply by nearly 40% in 2022.
+- Repeat purchase rates (≥2 orders) consistently decreased, from 20.22% in 2019 to 14.76% in 2022, indicating challenges in retaining customers after initial purchases.
 - The stability in the number of repeat customers suggests a core base of loyal customers who consistently make multiple purchases each year.
-- The decline in both unique and repeat customers in 2022 highlights potential shifts in market dynamics or customer preferences. This trend suggests an opportunity to refine customer retention and loyalty strategies to reverse these declining metrics and boost overall customer lifetime value.
+- The decline in both unique and repeat customers in 2022 highlights potential shifts in market dynamics or customer preferences.
 
 ![Customer Retention Table](Data/visualizations/customer_retention.webp)
 
@@ -111,85 +103,69 @@ To maintain growth, ByteX should focus on expanding its top-performing products,
 
 ## Actionable Recommendations
 
-### Maximizing Product Offerings
+Maximizing Product Offerings
 
-Monitors, AirPods, and laptops dominate sales and perform consistently across all regions.
-- **Recommendation**: Expand catalogue variations in these categories to meet diverse customer needs, such as different premium models, to drive repeat purchases and strengthen market presence.
+- **Expand High-Performing Categories**: Increase catalog variations in monitors, AirPods, and laptops to meet diverse customer needs with premium models, driving repeat purchases and solidifying market presence.
+- **Optimize Samsung Cable Pack**: Reevaluate the Samsung Cable Pack's pricing strategy, bundle it with high-value items, or offer as a promotional gift to increase average order value (AOV) and revenue contribution.
 
-The Samsung Cable Pack makes up 20% of orders but only 2% of revenue, highlighting an opportunity for optimization.
-- **Recommendation**: Reevaluate pricing, bundle with high-value items, or offer as a promotional gift to boost average order value (AOV).
+Customer Growth and Retention
 
-### Customer Growth and Retention Strategies
+- **Boost Repeat Purchases**: Target single-purchase customers with personalized re-engagement campaigns and introduce tiered rewards within the loyalty program to incentivize frequent purchases and improve retention.
+- **Revitalize Customer Acquisition**: Expand acquisition channels to include social media, influencer partnerships, and affiliate programs. Refine ByteX's messaging to re-engage past customers and attract new ones.
+- **Leverage Core Customer Insights**: Analyze behaviors and preferences of repeat customers to enhance loyalty campaigns. Introduce referral incentives to drive word-of-mouth growth and increase new customer acquisition from existing networks.
 
-The repeat purchase rate has shown a steady decline, with a notable drop in 2022. Strengthening the loyalty program and re-engaging single-purchase customers are key to expanding the repeat customer base.
-- **Recommendation**: Increase repeat purchase rates by targeting single-purchase customers with personalized re-engagement campaigns. Introducing tiered rewards within the loyalty program can further incentivize frequent purchases and improve customer retention.
+Loyalty Program Enhancements
 
-The sharp drop in unique customers in 2022 suggests a need to revamp acquisition strategies to regain growth momentum.
-- **Recommendation**: Revitalize the acquisition approach by expanding into new channels, such as social media and influencer/affiliate partnerships, and refine ByteX’s messaging to attract and re-engage past customers.
+- **Enhance Loyalty Onboarding**: Implement targeted onboarding campaigns with first-purchase discounts or early access offers. Tiered rewards will further incentivize frequent purchases and strengthen customer loyalty.
+- **Data-Driven Program Refinement**: Continuously monitor loyalty metrics to refine program offerings based on data, ensuring sustained engagement and effectiveness.
 
-The stability in the repeat customer base presents an opportunity to leverage insights from this group to gain understanding of customer preferences and behaviors.
-- **Recommendation**: Analyze the behaviors and preferences of this core group to inform loyalty-focused campaigns and improve our customer growth and retention. Offer referral incentives to encourage word-of-mouth growth, helping to increase acquisition from existing customer networks.
+Maintaining Low Refund Rates
 
-### Loyalty Program Enhancements
+- **Sustain Successful Practices**: Replicate effective strategies from 2021, including detailed product descriptions, stringent quality control, and robust post-purchase support, to maintain low refund rates and meet customer expectations.
 
-While ByteX attracts new buyers, loyalty member conversion has been inconsistent and relevant metrics trend downwards in program performance near the end of 2022 onwards.
+Optimizing Channels and Platforms
 
-- **Recommendation**: Use targeted onboarding campaigns offering first-purchase discounts or early access. Tiered rewards can incentivize frequent purchases and improve retention. **Continuously monitor these metrics before making any final decisions on the program’s future, allowing for data-driven refinements.**
+- **Expand Affiliate Partnerships**: Increase affiliate partnerships or offer higher commissions to attract influential marketers, enhancing brand reach and boosting AOV.
+- **Enhance Mobile App Experience**: Improve the mobile app's checkout and personalization features to capitalize on rising mobile usage and increase its contribution to total sales.
 
-### Maintaining Low Refund Rates
+Regional Growth Strategies
 
-In 2021, refund rates dropped significantly, aligning with customer expectations.
-
-- **Recommendation**: Replicate successful practices from that period; product descriptions, quality control, or post-purchase support to maintain this trend.
-
-### Optimizing Channels and Platforms
-
-Affiliate marketing offers high AOV but accounts for only 3% of sales, holding untapped potential.
-- **Recommendation**: Expand affiliate partnerships or increase commissions to attract influential marketers, boosting brand reach and AOV.
-
-The website remains the highest-grossing sales channel, but the mobile app lags behind.
-- **Recommendation**:  If resources permit, improve the mobile app experience by simplifying checkout, personalizing the experience. With mobile usage trends increasing, these adjustments could increase its contribution to total sales.
-
-### Regional Growth Strategies
-
-North America and EMEA generate 80% of sales, making them critical markets for sustained growth. However, regions like APAC and LATAM show potential despite their volatility.
-
-- **Recommendations**:
-    - Continue to focus resources on North America and EMEA through regionalized marketing campaigns and ensure product availability aligns with local consumer preferences.
-    - For APAC and LATAM, consider leveraging localized partnerships or promotions that speak to the cultural and economic conditions of each region. These markets may require more tailored approaches, but with the right strategies, ByteX can capture their growth potential and stabilize sales performance.
+- **Focus on High-Performing Regions**: Continue allocating resources to North America and EMEA with regionalized marketing and product availability strategies tailored to local preferences.
+- **Target Growth in APAC and LATAM**: Leverage localized partnerships and culturally tailored promotions to capture growth potential in APAC and LATAM, stabilizing sales in these emerging markets.
 
 <details>
 
-<summary> Assumptions and Caveats </summary>
+<summary> Questions; Assumptions and Caveats </summary>
+
+## Questions for Stakeholders Prior to Project Advancement
+
+- **Unmatched `customer_id` Records**
+    - Which table should be the primary source for `customer_id` to maintain data consistency across analyses?
+
+- **`marketing_channel` and `account_creation_method` in the `customers` table**
+    - How is this data recorded, and what does it specifically represent?
+    - What factors contribute to their deterministic relationship?
+    - Does `marketing_channel` capture the initial account creation touchpoint, or does it represent the origin of each individual purchase (which is more relevant for tracking sales)?
+
+- **`loyalty_program` in the `customers` table**
+    - Is `loyalty_program` account-specific or tied to individual orders?
+    - Can loyalty membership status vary between orders for the same user, i.e., is it a subscription or a one-time sign-up?
 
 ## Assumptions and Caveats
-> Key questions to relevant teams for further clarity before project progression and decision-making.
 
-- **Refund Records**: No refunds were recorded for 2022, which is an anomaly that may require further examination.
-- **Deterministic Relationship in Data**: There is a one-to-one mapping between `marketing_channel` and `account_creation_method`, with each channel exclusively tied to a single method.  This lack of variation may need attention from the data engineering team.
+- **Refund Records**: No refunds were recorded for 2022, which is an anomaly warranting further examination.
+- **Deterministic Relationship in Data**: Each `marketing_channel` is uniquely linked to one `account_creation_method`, indicating a one-to-one mapping. This lack of variation may require attention from the data engineering team to confirm intended relationships.
     - ![One to One Mapping](Data/visualizations/order_count_channelxmethod.webp)
-- **Loyalty Program Clarification**: The relationship between the `loyalty_program` variable and individual order records is unclear. Specifically:
-  - Is `loyalty_program` linked to the user's account, or is it order-specific?
-  - Can a user be a loyalty member for one purchase and not another? This detail is critical for accurately measuring loyalty program performance.
-- **Sales and Marketing Channels**: Direct and email marketing channels drive most sales, though their direct connection to the loyalty program remains unclear due to the deterministic nature of *channel*, *account*, and *order* relationships.
-    - **Initial Point of Contact Leading to Purchases**: Each purchase should ideally be attributed to the marketing channel that directly led to it, rather than defaulting all future purchases to a customer's initial channel (e.g., Customer A comes through email for one purchase and social media for the next). This approach provides a clearer view of each channel's effectiveness in driving sales over time. That is not the case in this dataset
-    - Given the assumption that it is the user's entry point at time of account creation rather than order placement (which is not the best practice in the context of ecommerce transactions) these are useful insights:
-        - The email channel has the highest loyalty membership rate at 58%.
-        - The direct channel has the largest loyalty member count, comprising 32,906 members (72% of all loyalty members).
-        - These metrics could inform which channels to emphasize for enhancing loyalty program engagement.
-- **Unmatched Customers in `orders` vs `customers` table**: There are 27k (25%) transaction records whose `customer_id` is not present in the `customers` table. This discrepancy may indicate missing customer data or errors in data collection, requiring further investigation. This will directly affect SQL queries when joining on the `customer_id`, and will result in these records to have NULLs in any of the attributes from the `customers` table.
-    - This point is mainly due to the dataset table structure in the SQL database, where tables are segmented by `orders`, `customers`, `geo_lookup`, and `order_status`. This segmentation revealed the mismatch in data. Working with the Excel data, since the dataset is in a singular table, this issue is not present since all the data is in one place.
-    - With this, a valuable clarifying question is to ask the stakeholder which table to source the `customer_id` from because of this discrepancy. This will ensure that the data is consistent across all tables and that the analysis is.
-
-### Key Columns for Further Clarification with Relevant Teams:
-
-- `marketing_channel` and `account_creation_method` in the `customers` table
-    - How is this recorded and what does it represent exactly in the context of the data? 
-    - What factors drive the deterministic relationship between them?
-    - Is the marketing channel the initial touchpoint before account creation OR the point of origin that led to an individual purchase was made (which is a far more useful metric)?
-- `loyalty_program` in the `customers` table
-    - Is this variable account-specific or tied to individual orders?
-    - Can membership status vary between orders for the same user? (Is the loyalty program a subscription or a one-time sign-up?)
+- **Loyalty Program Clarification**:
+    - Ambiguity exists in the `loyalty_program` variable—it's unclear if it's tied to the user's account or is specific to individual orders.
+    - Can a user be a loyalty member for one purchase and not another? This clarification is essential for accurately measuring program performance.
+- **Sales and Marketing Channels**: Direct and email channels are top drivers of sales, yet the link between these channels and the loyalty program is uncertain due to deterministic channel-account-order relationships.
+    - **Attribution of Purchases to Channels**: Ideally, each purchase would be attributed to the marketing channel that directly led to it, rather than defaulting all future purchases to the initial channel. However, the current dataset reflects the entry point at account creation, not at individual purchase. Despite this, the data provides insights on loyalty membership by channel:
+        - **Email Channel**: Highest loyalty membership rate at 58%.
+        - **Direct Channel**: Largest loyalty membership count, with 32,906 members (72% of all loyalty members).
+    - These metrics could inform strategic channel emphasis to boost loyalty engagement.
+- **Unmatched Customer Records**: Approximately 27k (25%) of transactions have `customer_id`s not present in the `customers` table. This discrepancy suggests missing data or data entry errors, impacting SQL queries and resulting in NULLs when joining on `customer_id`.
+    - This issue arises from the segmented structure of SQL tables (`orders`, `customers`, `geo_lookup`, `order_status`). However, in Excel, where all data resides in a single table, this issue doesn't occur.
 
 </details>
 
