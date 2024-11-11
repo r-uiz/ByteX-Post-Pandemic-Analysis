@@ -2,8 +2,7 @@
 
 > For more of my projects and data journey, visit my [Portfolio](https://ruizdelcarmen.me/).
 
-<details>
-<summary>Table of Contents</summary>
+Table of Contents
 
 - [Project Background](#project-background)
 - [Executive Summary](#executive-summary)
@@ -14,10 +13,10 @@
     - [Loyalty Program Performance](#loyalty-program-performance)
     - [Sales by Platforms & Channels](#sales-by-platforms--channels)
     - [Refund Rate Trends](#refund-rate-trends)
-- [Actionable Recommendations](#actionable-recommendations)
+- [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 
-</details>
+***
 
 ## Project Background
 
@@ -27,12 +26,8 @@ ByteX, a global e-commerce company founded in 2018, specializes in selling popul
 
 ByteX's sales analysis of 108k records across 2019-2022 shows annual revenue stabilizing at around $7 million, nearing pre-COVID levels, with North America and EMEA contributing 80% of sales. Monitors and AirPods account for 60% of revenue, though customer retention is a concern as unique and repeat purchase rates have declined by 15% and 10%, respectively. ByteX can benefit from expanding top product lines, optimizing bundling, and enhancing loyalty programs to increase customer lifetime value. Targeted growth in APAC and LATAM, along with improvements to digital channels like the mobile app, will strengthen ByteX's market position and drive sustainable growth.
 
-<details>
-<summary>ByteX Dataset ERD</summary>
-
 ![ByteX Dataset ERD](Data/visualizations/ecommerce_ERD.webp)
-
-</details>
+ByteX Dataset ERD
 
 ## Insights Deep-Dive
 
@@ -101,12 +96,14 @@ ByteX's sales analysis of 108k records across 2019-2022 shows annual revenue sta
 
 ![Loyalty Impact on Refund Rates](Data/visualizations/loyalty_impact_refund.webp)
 
-## Actionable Recommendations
+## Recommendations
 
 Maximizing Product Offerings
 
 - **Expand High-Performing Categories**: Increase catalog variations in monitors, AirPods, and laptops to meet diverse customer needs with premium models, driving repeat purchases and solidifying market presence.
 - **Optimize Samsung Cable Pack**: Reevaluate the Samsung Cable Pack's pricing strategy, bundle it with high-value items, or offer as a promotional gift to increase average order value (AOV) and revenue contribution.
+
+***
 
 Customer Growth and Retention
 
@@ -114,30 +111,38 @@ Customer Growth and Retention
 - **Revitalize Customer Acquisition**: Expand acquisition channels to include social media, influencer partnerships, and affiliate programs. Refine ByteX's messaging to re-engage past customers and attract new ones.
 - **Leverage Core Customer Insights**: Analyze behaviors and preferences of repeat customers to enhance loyalty campaigns. Introduce referral incentives to drive word-of-mouth growth and increase new customer acquisition from existing networks.
 
+***
+
 Loyalty Program Enhancements
 
 - **Enhance Loyalty Onboarding**: Implement targeted onboarding campaigns with first-purchase discounts or early access offers. Tiered rewards will further incentivize frequent purchases and strengthen customer loyalty.
 - **Data-Driven Program Refinement**: Continuously monitor loyalty metrics to refine program offerings based on data, ensuring sustained engagement and effectiveness.
 
+***
+
 Maintaining Low Refund Rates
 
 - **Sustain Successful Practices**: Replicate effective strategies from 2021, including detailed product descriptions, stringent quality control, and robust post-purchase support, to maintain low refund rates and meet customer expectations.
+
+***
 
 Optimizing Channels and Platforms
 
 - **Expand Affiliate Partnerships**: Increase affiliate partnerships or offer higher commissions to attract influential marketers, enhancing brand reach and boosting AOV.
 - **Enhance Mobile App Experience**: Improve the mobile app's checkout and personalization features to capitalize on rising mobile usage and increase its contribution to total sales.
 
+***
+
 Regional Growth Strategies
 
 - **Focus on High-Performing Regions**: Continue allocating resources to North America and EMEA with regionalized marketing and product availability strategies tailored to local preferences.
 - **Target Growth in APAC and LATAM**: Leverage localized partnerships and culturally tailored promotions to capture growth potential in APAC and LATAM, stabilizing sales in these emerging markets.
 
-<details>
+***
 
-<summary> Questions; Assumptions and Caveats </summary>
+## Clarifying Questions, Assumptions, and Caveats
 
-## Questions for Stakeholders Prior to Project Advancement
+### Questions for Stakeholders Prior to Project Advancement
 
 - **Unmatched `customer_id` Records**
     - Which table should be the primary source for `customer_id` to maintain data consistency across analyses?
@@ -151,7 +156,7 @@ Regional Growth Strategies
     - Is `loyalty_program` account-specific or tied to individual orders?
     - Can loyalty membership status vary between orders for the same user, i.e., is it a subscription or a one-time sign-up?
 
-## Assumptions and Caveats
+### Assumptions and Caveats
 
 - **Refund Records**: No refunds were recorded for 2022, which is an anomaly warranting further examination.
 - **Deterministic Relationship in Data**: Each `marketing_channel` is uniquely linked to one `account_creation_method`, indicating a one-to-one mapping. This lack of variation may require attention from the data engineering team to confirm intended relationships.
@@ -166,8 +171,6 @@ Regional Growth Strategies
     - These metrics could inform strategic channel emphasis to boost loyalty engagement.
 - **Unmatched Customer Records**: Approximately 27k (25%) of transactions have `customer_id`s not present in the `customers` table. This discrepancy suggests missing data or data entry errors, impacting SQL queries and resulting in NULLs when joining on `customer_id`.
     - This issue arises from the segmented structure of SQL tables (`orders`, `customers`, `geo_lookup`, `order_status`). However, in Excel, where all data resides in a single table, this issue doesn't occur.
-
-</details>
 
 ***
 
